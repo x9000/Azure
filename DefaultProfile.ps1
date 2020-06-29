@@ -80,15 +80,15 @@ New-RegValue -RegPath HKLM:\TEMP\SOFTWARE\Microsoft\Windows\CurrentVersion\Theme
 New-RegValue -RegPath HKLM:\TEMP\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize -RegValueName EnableTransparency -RegType DWord -RegValue 0
 
 #Change System Regional Settings to UK-English
-New-RegValue -RegPath HKLM:\TEMP\Control Panel\International -RegValueName Locale -RegType String -RegValue "00000809"
-New-RegValue -RegPath HKLM:\TEMP\Control Panel\International -RegValueName LocaleName -RegType String -RegValue "en-GB"
-New-RegValue -RegPath HKLM:\TEMP\Control Panel\International -RegValueName sCountry -RegType String -RegValue "United Kingdom"
-New-RegValue -RegPath HKLM:\TEMP\Control Panel\International -RegValueName sLanguage -RegType String -RegValue "ENG"
-New-RegValue -RegPath HKLM:\TEMP\Control Panel\International -RegValueName sLongDate -RegType String -RegValue "dd MMMM yyyy"
-New-RegValue -RegPath HKLM:\TEMP\Control Panel\International -RegValueName iCountry -RegType String -RegValue "44"
-New-RegValue -RegPath HKLM:\TEMP\Control Panel\International -RegValueName iDate -RegType String -RegValue "1"
-New-RegValue -RegPath HKLM:\TEMP\Control Panel\International -RegValueName iMeasure -RegType String -RegValue "0"
-New-RegValue -RegPath HKLM:\TEMP\Control Panel\International -RegValueName iNegCurr -RegType String -RegValue "1"
+New-RegValue -RegPath "HKLM:\TEMP\Control Panel\International" -RegValueName Locale -RegType String -RegValue "00000809"
+New-RegValue -RegPath "HKLM:\TEMP\Control Panel\International" -RegValueName LocaleName -RegType String -RegValue "en-GB"
+New-RegValue -RegPath "HKLM:\TEMP\Control Panel\International" -RegValueName sCountry -RegType String -RegValue "United Kingdom"
+New-RegValue -RegPath "HKLM:\TEMP\Control Panel\International" -RegValueName sLanguage -RegType String -RegValue "ENG"
+New-RegValue -RegPath "HKLM:\TEMP\Control Panel\International" -RegValueName sLongDate -RegType String -RegValue "dd MMMM yyyy"
+New-RegValue -RegPath "HKLM:\TEMP\Control Panel\International" -RegValueName iCountry -RegType String -RegValue "44"
+New-RegValue -RegPath "HKLM:\TEMP\Control Panel\International" -RegValueName iDate -RegType String -RegValue "1"
+New-RegValue -RegPath "HKLM:\TEMP\Control Panel\International" -RegValueName iMeasure -RegType String -RegValue "0"
+New-RegValue -RegPath "HKLM:\TEMP\Control Panel\International" -RegValueName iNegCurr -RegType String -RegValue "1"
 
 REG UNLOAD HKLM\TEMP
 
